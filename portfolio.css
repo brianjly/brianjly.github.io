@@ -1,0 +1,202 @@
+html, body{
+	font-family: 'Armata';
+	font-weight: 100;
+	color:white;
+}
+
+button{
+	font-family: 'Armata';
+	font-weight: 100;
+
+}
+
+h1,h2,h3{
+	font-weight: 500;
+
+}
+
+a{
+	color:black;
+}
+
+a:hover{
+	color:red;
+}
+
+/****************************************************************************** NavBar*/
+
+
+#sidenav{
+	width: 68px;
+	height:67%;
+	background-color: rgba(106,137,148, 0.9);
+	display: block;
+	border-radius: 5px;
+	opacity:1.0;
+	padding-top: 150px;
+	position:absolute;
+	top:60px;
+
+	transition: 0.3s;
+
+
+}
+
+#sidenav:hover{
+	width:195px;
+	background-color:rgba(106,137,148, 0.2);
+}
+
+
+#sidenav:hover .navtext{
+	padding-top: 17px;
+
+	font-size: 28px;
+	transition:0.5s;
+	transition-delay:0.1s;
+}
+
+
+
+.navtext{
+	color:white;
+	float:left;
+	font-size: 0;
+	padding-top: 0px;
+	margin-left: 10px;
+
+
+}
+
+.navitem{
+	height:55px;
+	width:55px;
+	background-color: white;
+	display:block;
+	margin:6px;
+	float:right;
+	border-radius: 3px;
+	margin-bottom: 15px;
+
+
+}
+
+.navbox{
+	display:inline-block;
+	width:100%;
+	height:60px;
+	padding-bottom: 7px;
+
+
+}
+
+.navbox:hover{
+	background-color: black;
+	border-right: 4px solid red;
+
+}
+
+/*********************************************************************************************** Main Content area */
+
+
+#particles-js {
+  width:95%;
+  height:90%;
+  border-style: 2px solid black;
+  clear:both;
+  margin-top: 60px;
+  margin-left: 2.5%;
+  box-shadow: 12px 12px 20px #888888;
+  background-image: url('mountain.jpg');
+  background-repeat: no-repeat;
+  background-position: 0% -30%%;
+  background-size: cover;
+	background-size: -webkit-cover
+
+
+}
+
+#displaybox{
+	margin-left:75px;
+	margin-top: 60px;
+	display:-webkit-inline-flex;
+	flex-direction: column;
+	display:inline-flex;
+	width:85%;
+	height:75%;
+	position: absolute;
+	overflow: auto;
+	text-align: center;
+}
+
+#displaybox h3{
+	padding: 0% 15%;
+}
+
+#displaybox img{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+button{
+	width: 20%;
+	height: 60px;
+	background-color: rgb(113,149,163);
+	color:white;
+	outline:none;
+	border:none;
+	opacity:0.83;
+	margin-top: 5px;
+	margin-right: 10px;
+
+}
+
+button:hover{
+	opacity:1.1;
+	box-shadow: 0px 0px 30px white;
+	text-shadow: 0px 0px 1px #ffc, 0px 0px 1px #fff;
+}
+
+/******************************************************************************************* Logo */
+
+#logo{
+	height:17%;
+	position:absolute;
+	top:0;
+	right:5%;
+
+	transition:0.6s;
+}
+
+#logo:hover{
+
+	-webkit-filter: invert(100%);
+
+}
+
+/********************************************************************************** Media queries*/
+
+
+@media (max-width: 600px) {
+
+  #sidenav{
+    display: none;
+  }
+
+  #logo{
+  	height:8%;
+  }
+
+  #particles-js{
+	margin-top: 30px;
+	height:95%;
+  }
+
+  #displaybox{
+	margin-left:10px;
+  }
+
+  button{
+	width: 45%;
+
+}
