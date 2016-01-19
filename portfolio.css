@@ -129,15 +129,6 @@ a:hover{
 	text-align: center;
 }
 
-#displaybox h3{
-	padding: 0% 15%;
-}
-
-#displaybox img{
-	margin-left: auto;
-	margin-right: auto;
-}
-
 button{
 	width: 20%;
 	height: 60px;
@@ -173,6 +164,50 @@ button:hover{
 	-webkit-filter: invert(100%);
 
 }
+
+/***************************************************************** Front Page*/
+
+#displaybox h3{
+	padding: 0% 15%;
+}
+
+#displaybox img{
+	margin-left: auto;
+	margin-right: auto;
+	border-radius:50%;
+	height:180px;
+	border: 6px solid white;
+}
+
+/***************************************************************** About*/
+
+/***************************************************************** Works*/
+#portfoliobox{
+	display: -webkit-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.workbox{
+	width:380px;
+	height:400px;
+	background-color: rgba(255,255,255,0.5);
+	margin: 10px;
+
+	display:block;
+
+}
+
+
+/***************************************************************** Skills*/
+
+/***************************************************************** Contact*/
+
+
+
+
+
 
 /********************************************************************************** Media queries*/
 
