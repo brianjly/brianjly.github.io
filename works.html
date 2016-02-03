@@ -4,32 +4,61 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="stylesheet" href="portfolio.css">
+
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href='https://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'></head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" type="text/css" href="component.css" />
+
+</head>
+
 
 <body>
-	<a href="portfolio.html"><img id="logo" src="bl.png"></a>
+	<a href="portfolio.html"><img id="logo" src="images/bl.png"></a>
+	<a href="https://github.com/brianjly"><img id="github" src="images/github.png"></a>
+	<a href="https://www.linkedin.com/in/brian-ly-95617082"><img id="linkedin" src="images/linkedin.png"></a>
 
 	<div id="particles-js">
 
 	<!--Content-->
 
 	<div id="displaybox">
-		<h1>Works</h1><br>
+		<h2 class="headerbox">Works</h2>
 		<div id="portfoliobox">
-			<div class="workbox"></div>
-			<div class="workbox"></div>
-			<div class="workbox"></div>
-			<div class="workbox"></div>
-			<div class="workbox"></div>
-			<div class="workbox"></div>
-			<div class="workbox"></div>
-			<div class="workbox"></div>
+
+			<div class="md-modal md-effect-13" id="modal-1">
+				<div class="md-content">
+					<h3>Trojanpreneur</h3>
+					<div>
+						<img src="images/trojanpreneur.png" style="width:100%;">
+						<ul>
+							<li>Class project</li>
+							<li>Implemented MVC framework using AngularJS</li>
+							<li>Designed interface using Angular Material Design and Bootstrap</li>
+
+						</ul>
+						<button class="md-close">Close</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="workbox">
+
+				<div class="imageholder image1 md-trigger" data-modal="modal-1"></div>
+				<h1>Trojanpreneur</h1>
+				<h4>AngularJs, Angular Material Design, Bootstrap</h4>
+				<button><h4>Checkout Site</h4></button>
+
+			</div>
+			<div class="workbox"><div class="imageholder image2 md-trigger" data-modal="modal-1"></div></div>
+			<div class="workbox"><div class="imageholder image1"></div></div>
+			<div class="workbox"><div class="imageholder1"></div></div>
+
+			<div class="md-overlay"></div>
+
 
 
 		</div>
-
-
 
 
 	</div>
@@ -37,34 +66,43 @@
 	<div id="sidenav">
 
 		<a href="about.html"><div class="navbox">
-			<div class="navtext">About</div>
-			<div class="navitem"><center><i class="material-icons md-dark" style="font-size: 35px; margin-top:10px;">info_outline</i></center></div>
+			<div class="navtext">ABOUT</div>
+			<div class="navitem"><center><i class="material-icons md-dark" style="font-size: 25px; margin-top:5px;">info_outline</i></center></div>
 		</div></a>
 
 		<a href="works.html"><div class="navbox">
-			<div class="navtext">Works</div>
-			<div class="navitem"><center><i class="material-icons" style="font-size: 35px; margin-top:10px;">assignment</i></center></div>
+			<div class="navtext">WORKS</div>
+			<div class="navitem"><center><i class="material-icons" style="font-size: 25px; margin-top:5px;">assignment</i></center></div>
 		</div></a>
 
 		<a href="skills.html"><div class="navbox">
-			<div class="navtext">Skills</div>
-			<div class="navitem"><center><i class="material-icons" style="font-size: 35px; margin-top:10px;">equalizer</i></center></div>
+			<div class="navtext">SKILLS</div>
+			<div class="navitem"><center><i class="material-icons" style="font-size: 25px; margin-top:5px;">equalizer</i></center></div>
 		</div></a>
 
 		<a href="contact.html"><div class="navbox">
-			<div class="navtext">Contact</div>
-			<div class="navitem"><center><i class="material-icons" style="font-size: 35px; margin-top:10px;">email</i></center></div>
+			<div class="navtext">CONTACT</div>
+			<div class="navitem"><center><i class="material-icons" style="font-size: 25px; margin-top:5px;">email</i></center></div>
 		</div></a>
 	</div>
 
 	</div>
-	<script src="particles.min.js"></script>
 
-	<script src="app.js"></script>
+
+<!-- Particles background-->
+
+<script src="js/particles.min.js"></script>
+
+<script src="js/app.js"></script>
+
+	<!-- Modal e5ects-->
+
+	<script src="js/modalEffects.js" type="text/javascript"></script>
+	<script src="js/classie.js" type="text/javascript"></script>
+
+
+
 
 </body>
-
-
-
 
 </html>

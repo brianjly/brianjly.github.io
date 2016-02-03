@@ -1,18 +1,23 @@
 html, body{
-	font-family: 'Armata';
+	font-family: 'Geo', sans-serif;
 	font-weight: 100;
 	color:white;
 }
 
-button{
-	font-family: 'Armata';
-	font-weight: 100;
 
+
+h2,h3{
+	font-weight: 100;
+	margin:0em;
+	font-family: 'Geo', sans-serif;
+	color:white;
 }
 
-h1,h2,h3{
-	font-weight: 500;
-
+h1{
+	font-weight: 300;
+	margin:0em;
+	font-family: 'Geo', sans-serif;
+	color:white;
 }
 
 a{
@@ -27,33 +32,41 @@ a:hover{
 
 
 #sidenav{
-	width: 68px;
-	height:67%;
-	background-color: rgba(106,137,148, 0.9);
-	display: block;
-	border-radius: 5px;
-	opacity:1.0;
+	width: 37px;
+	height:100%;
 	padding-top: 150px;
+	background-color: rgba(255,87,34, 0.9);
+	display: inline-block;
+	opacity:0.9;
 	position:absolute;
-	top:60px;
+	box-shadow: 7px 0px 15px 0px rgba(0, 0, 0, 0.4);
 
-	transition: 0.3s;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+	transition: 0.7s;
 
 
 }
 
 #sidenav:hover{
-	width:195px;
-	background-color:rgba(106,137,148, 0.2);
+	width:155px;
+	background-color:rgba(255,87,34, 0.2);
 }
 
 
 #sidenav:hover .navtext{
-	padding-top: 17px;
+	padding-top: 10px;
 
-	font-size: 28px;
+	font-size: 14px;
+	font-weight: 500;
 	transition:0.5s;
 	transition-delay:0.1s;
+}
+
+#sidenav:hover .navitem{
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -62,21 +75,18 @@ a:hover{
 	color:white;
 	float:left;
 	font-size: 0;
-	padding-top: 0px;
-	margin-left: 10px;
-
+	margin-left: 16px;
 
 }
 
 .navitem{
-	height:55px;
-	width:55px;
-	background-color: white;
+	height:35px;
+	width:35px;
 	display:block;
-	margin:6px;
 	float:right;
-	border-radius: 3px;
-	margin-bottom: 15px;
+	color:rgba(255, 255, 255, 1);
+
+	transition:0.6s;
 
 
 }
@@ -84,15 +94,16 @@ a:hover{
 .navbox{
 	display:inline-block;
 	width:100%;
-	height:60px;
-	padding-bottom: 7px;
-
+	height:35px;
 
 }
 
 .navbox:hover{
 	background-color: black;
-	border-right: 4px solid red;
+	border-right: 4px solid white;
+	border-radius: 5px;
+
+
 
 }
 
@@ -106,80 +117,215 @@ a:hover{
   clear:both;
   margin-top: 60px;
   margin-left: 2.5%;
-  box-shadow: 12px 12px 20px #888888;
-  background-image: url('mountain.jpg');
-  background-repeat: no-repeat;
-  background-position: 0% -30%%;
-  background-size: cover;
-	background-size: -webkit-cover
+  box-shadow: 0px 10px 20px -2px #444444;
 
+
+
+		background-color: rgb(96,125,139);
+  background-image:linear-gradient(to bottom,rgba(233,150,122,0.5),rgb(96,125,139) 15%);
+
+	position: relative;
 
 }
+
+#particles-js::before{
+	content:' ';
+	width:100%;
+	height:100%;
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-image:url('images/mountain.png');
+	background-position: 0% 120%;
+	-webkit-filter:invert(95%);
+
+	opacity: 0.5;
+
+}
+
 
 #displaybox{
 	margin-left:75px;
-	margin-top: 60px;
+	margin-top: 10px;
 	display:-webkit-inline-flex;
 	flex-direction: column;
 	display:inline-flex;
-	width:85%;
-	height:75%;
+
+	width:92%;
+	height:92%;
 	position: absolute;
 	overflow: auto;
 	text-align: center;
-}
+	padding-right: 10px;
+	padding-top: 30px;
 
-button{
-	width: 20%;
-	height: 60px;
-	background-color: rgb(113,149,163);
-	color:white;
-	outline:none;
-	border:none;
-	opacity:0.83;
-	margin-top: 5px;
-	margin-right: 10px;
+
 
 }
 
-button:hover{
-	opacity:1.1;
-	box-shadow: 0px 0px 30px white;
-	text-shadow: 0px 0px 1px #ffc, 0px 0px 1px #fff;
+.cloud{
+	width:30%;
+	position: absolute;
+	top:50%;
+	left:5%;
+	opacity: 0.9;
 }
 
-/******************************************************************************************* Logo */
+.cloud1{
+	width:30%;
+	position: absolute;
+	top:5%;
+	left: 70%;
+	opacity: 0.9;
+
+}
+
+
+/********************************************************************************** Logo and Soc icons */
 
 #logo{
-	height:17%;
+	height:60px;
 	position:absolute;
 	top:0;
-	right:5%;
+	left:150px;
+	box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 1);
+	z-index:1;
 
 	transition:0.6s;
 }
 
 #logo:hover{
+	height:80px;
+	box-shadow: 0px 2px 25px 5px rgba(0, 0, 0, 0.6);
+}
 
-	-webkit-filter: invert(100%);
+#github{
+	height:35px;
+	position: absolute;
+	right:150px;
+	top:12px;
+	opacity: 0.6;
+}
 
+#linkedin{
+	height:35px;
+	position: absolute;
+	right:110px;
+	top:12px;
+	opacity: 0.6;
+
+}
+
+#github:hover,#linkedin:hover{
+	-webkit-filter:blur(1.5px);
+	opacity:1;
 }
 
 /***************************************************************** Front Page*/
 
 #displaybox h3{
-	padding: 0% 15%;
+	padding: 10px 15%;
+
 }
 
-#displaybox img{
+#displaybox .rounded{
 	margin-left: auto;
 	margin-right: auto;
 	border-radius:50%;
 	height:180px;
 	border: 6px solid white;
+	box-shadow: 0px 10px 25px 5px rgba(0, 0, 0, 0.7);
+
+}
+.btnbox{
+	width: 180px;
+	height: 44px;
+	position:relative;
+	margin:20px auto;
+	display: inline-block;
+	padding-top: 4px;
 }
 
+.btnicon{
+
+	float:left;
+	color:white;
+	background-color: black;
+	border-radius: 3px;
+	margin-left: 12px;
+
+
+}
+
+.btn{
+	width:100%;
+	height:100%;
+	top:0;
+	left:0
+	background-color: rgb(113,149,163);
+	color:white;
+	position: absolute;
+
+	outline: solid 2px #FFF;
+	opacity:0.4;
+
+	/**box-shadow: 0px 10px 30px 5px rgba(0, 0, 0, 0.5);**/
+}
+
+.btnbox a{
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+
+}
+
+.btn a:hover{
+	color: inherit;
+}
+
+.btnbox h2{
+	margin-top: 7px;
+}
+
+.btn:hover{
+	animation: pulse 2.2s infinite alternate;
+	/*text-shadow: 0px 0px 1px #ffc, 0px 0px 1px #fff;*/
+}
+
+@keyframes pulse{
+	0%{
+		transform: scale(1,1);
+		opacity:0.4;
+
+	}
+
+	100%{
+		transform: scale(1.05,1.2);
+		opacity:1.0;
+
+
+	}
+}
+
+
+
 /***************************************************************** About*/
+
+.lakers{
+	position:absolute;
+	width: 25%;
+	top:20px;
+	right:30px;
+	opacity:0.3;
+}
+
+.usc{
+	position:absolute;
+	width: 12%;
+	top:220px;
+	right:50px;
+	opacity:0.3;
+}
 
 /***************************************************************** Works*/
 #portfoliobox{
@@ -187,20 +333,79 @@ button:hover{
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: space-around;
+
 }
 
+.headerbox{
+	background-color: rgba(0,0,0,0);
+	width:211px;
+	font-size:2.4em;
+	font-weight: 100;
+	display: block;
+	margin-top: 10px;
+
+}
 .workbox{
 	width:380px;
 	height:400px;
-	background-color: rgba(255,255,255,0.5);
+	background-color: rgba(158,158,158,0.5);
 	margin: 10px;
-
 	display:block;
+	box-shadow: 0px 10px 30px 5px rgba(0, 0, 0, 0.8);
+
+}
+
+.imageholder{
+	width:100%;
+	height: 200px;
+	background-size: cover;
+	display: block;
+	background-position: center;
+	margin-bottom:10px;
+
+}
+
+.image1{
+	background-image: url('images/trojanpreneur.png');
+}
+
+.image1:hover{
+	background-image:url('images/plus.png'),url('images/trojanpreneur.png');
+	background-size: 25%,cover;
+	background-repeat: no-repeat;
+
+	opacity:0.5;
+}
+
+.image2{
+	background-image: url('images/test.jpg');
+
+
+}
+
+.image2:hover{
+	background-image:url('images/plus.png'),url('images/test.jpg');
+	background-size: 25%,cover;
+	background-repeat: no-repeat;
+
+	opacity:0.5;
 
 }
 
 
+
 /***************************************************************** Skills*/
+
+table{
+	margin:0 auto;
+	background-color: rgba(168,208,223,0.3);
+	width:75%;
+}
+
+tr, th{
+	background-color: rgba(168,208,223,0.8);
+
+}
 
 /***************************************************************** Contact*/
 
@@ -220,18 +425,34 @@ button:hover{
 
   #logo{
   	height:8%;
+		left:60px;
   }
 
-  #particles-js{
-	margin-top: 30px;
-	height:95%;
-  }
+
 
   #displaybox{
 	margin-left:10px;
   }
 
-  button{
-	width: 45%;
+	#github{
 
+		right:90px;
+
+	}
+
+	#linkedin{
+
+		right:50px;
+
+	}
+
+
+
+}
+
+@media (max-width: 1000px) {
+	#particles-js::before{
+		background-position: 0% 100%;
+
+	}
 }
