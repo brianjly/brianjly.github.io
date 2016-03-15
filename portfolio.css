@@ -132,10 +132,10 @@ a:hover{
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-image:url('images/mountain.png');
-	background-position: 0% 130%;
+	background-position: 0% 122%;
 	-webkit-filter:invert(95%);
 
-	opacity: 0.5;
+	opacity: 0.6;
 
 }
 
@@ -223,8 +223,8 @@ a:hover{
 }
 
 .title{
-	font-size:3.0em;
-	font-weight: bolder;
+	font-size:2.4em;
+	font-weight: 900;
 	width:70%;
 	margin: 5% auto 0 10%;
 	text-align: left;
@@ -254,7 +254,7 @@ a:hover{
 }
 
 .orange{
-	color:#e65100;
+	color:#ffa726;
 }
 
 .blue{
@@ -263,7 +263,7 @@ a:hover{
 }
 
 .green{
-	color:#26a69a;
+	color:#00e676;
 }
 
 .red{
@@ -279,8 +279,10 @@ a:hover{
 	height: 44px;
 	position:relative;
 	display: inline-block;
-	margin: auto;
 	padding-top: 4px;
+	margin: auto;
+	text-align: center;
+
 }
 
 .btnicon{
@@ -368,6 +370,8 @@ a:hover{
 	top:20px;
 	right:30px;
 	opacity:0.5;
+
+	transition: 0.5s;
 }
 
 .usc{
@@ -376,6 +380,8 @@ a:hover{
 	top:220px;
 	right:50px;
 	opacity:0.5;
+
+	transition: 0.5s;
 }
 
 
@@ -393,11 +399,11 @@ a:hover{
 	font-size:2.4em;
 	font-weight: 100;
 	display: block;
-	margin-top: 10px;
-
+	margin: 0;
 }
+
 .workbox{
-	width:380px;
+	width:30%;
 	height:400px;
 	background-color: rgba(158,158,158,0.5);
 	margin: 10px;
@@ -415,6 +421,31 @@ a:hover{
 	margin-bottom:10px;
 
 }
+
+.linkbutton{
+	display: block;
+	background-color: rgba(0, 0, 0, 0.3);
+	width:40%;
+	margin: auto;
+	border: white 1px solid;
+	border-radius: 5px;
+
+	transition:0.5s;
+}
+
+.linkbutton a{
+	text-decoration: none;
+}
+
+.linkbutton:hover{
+	background-color: rgba(0, 0, 0, 1);
+
+}
+
+.linkbutton h2{
+	margin:10px 0;
+}
+
 
 .image1{
 	background-image: url('images/trojanpreneur.png');
@@ -458,24 +489,42 @@ a:hover{
 
 }
 
+.image4{
+	background-image: url('images/guestbook.png');
+
+
+}
+
+.image4:hover{
+	background-image:url('images/plus.png'),url('images/guestbook.png');
+	background-size: 25%,cover;
+	background-repeat: no-repeat;
+
+	opacity:0.5;
+
+}
+
 
 
 /***************************************************************** Skills*/
 
-table{
-	margin:0 auto;
-	background-color: rgba(168,208,223,0.3);
-	width:75%;
+#skills{
+	font-size: 1.13em;
 }
 
-tr, th{
-	background-color: rgba(168,208,223,0.8);
-
+.subtext{
+	font-size: 0.7em;
 }
 
 /***************************************************************** Contact*/
 
+#contact a{
+	color:#ef5350;
+}
 
+#contact a:hover{
+	color:white;
+}
 
 
 
@@ -485,19 +534,14 @@ tr, th{
 
 @media (max-width: 600px) {
 
-  #sidenav{
-    display: none;
-  }
+	#particles-js::before{
+		background-position: 0% 100%;
+
+	}
 
   #logo{
   	height:8%;
 		left:60px;
-  }
-
-
-
-  #displaybox{
-	margin-left:10px;
   }
 
 	#github{
@@ -519,9 +563,46 @@ tr, th{
 
 	.subtitle{
 		width: 92%;
-		margin:0 auto;
+	}
+
+	.moremargin{
+		margin: 15% auto 0 10%;
+	}
+
+	.workbox{
+		width:100%;
+	}
+
+}
+
+@media only screen and (min-width: 600px){
+	.workbox{
+		width:75%;
+	}
+
+	#particles-js::before{
+		background-position: 0% 120%;
+
+	}
+}
+
+@media only screen and (min-width: 900px) {
+
+	.workbox{
+		width:45%;
+	}
 
 
+
+}
+
+@media (max-width:900px){
+	#sidenav{
+		display: none;
+	}
+
+	#portfoliobox{
+		margin-left: 10%;
 	}
 
 	.lakers{
@@ -530,17 +611,27 @@ tr, th{
 	}
 
 	.usc{
-
 		opacity:0.2;
 	}
 
+	.subtitle{
+		width:90%;
+	}
 
+	#displaybox{
+		margin-left:0;
+	}
 
-}
-
-@media (max-width: 1000px) {
 	#particles-js::before{
 		background-position: 0% 100%;
 
 	}
+}
+
+@media only screen and (min-width: 1200px) {
+
+	.workbox{
+		width:30%;
+	}
+
 }
