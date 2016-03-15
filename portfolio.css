@@ -393,6 +393,7 @@ a:hover{
 	flex-wrap: wrap;
 	justify-content: space-around;
 
+
 }
 
 .headerbox{
@@ -400,7 +401,7 @@ a:hover{
 	font-size:2.4em;
 	font-weight: 100;
 	display: block;
-
+	margin: auto;
 }
 
 .workbox{
@@ -535,13 +536,13 @@ a:hover{
 
 @media (max-width: 600px) {
 
+
+	#portfoliobox{
+		margin-top: 30px;
+	}
 	#particles-js::before{
 		background-position: 0% 100%;
 
-	}
-
-	#headerbox{
-		margin-bottom: 25px;
 	}
 
   #logo{
