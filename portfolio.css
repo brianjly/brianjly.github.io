@@ -400,7 +400,7 @@ a:hover{
 	font-size:2.4em;
 	font-weight: 100;
 	display: block;
-	margin: auto;
+
 }
 
 .workbox{
@@ -538,6 +538,10 @@ a:hover{
 	#particles-js::before{
 		background-position: 0% 100%;
 
+	}
+
+	#headerbox{
+		margin-bottom: 25px;
 	}
 
   #logo{
