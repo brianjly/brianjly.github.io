@@ -103,6 +103,28 @@ a:hover{
 	background-color: rgba(0, 0, 0, 0.9);
 }
 
+/****************************************MOBILE NAVBAR*/
+
+#mobilenav{
+	width: 35px;
+	position: absolute;
+	display: none;
+	z-index: 1;
+	top: 0;
+	right:0;
+	background-color: rgba(0,0,0,0.15);
+}
+
+.mobilenavitem{
+	width:100%;
+	border-radius:4px;
+	margin:1px 0;
+
+}
+
+
+
+
 
 /*********************************************************************************************** Main Content area */
 
@@ -611,6 +633,10 @@ a:hover{
 
 	#portfoliobox{
 		margin-left: 10%;
+	}
+
+	#mobilenav{
+		display:block;
 	}
 
 	.lakers{
