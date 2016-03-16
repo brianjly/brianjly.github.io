@@ -1,0 +1,35 @@
+body{
+    background-color: rgba(66, 66, 66, 0.2);
+}
+
+nav {
+    height: 60px;
+    line-height: 60px;
+}
+
+.slidertext{
+  background-color: rgba(0,0,0,0.3);
+}
+
+.slider{
+  margin-bottom: 20px;
+}
+
+.black{
+  color:black;
+}
+
+.image{
+  height:90%
+}
+
+.navitem{
+  width:150px;
+  text-align:center;
+
+}
+
+.navitem1{
+  width:190px;
+  text-align:center
+}
