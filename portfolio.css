@@ -530,6 +530,35 @@ a:hover{
 
 }
 
+.image5{
+	background-image: url('images/draftscreenshot.png');
+
+
+}
+
+.image5:hover{
+	background-image:url('images/plus.png'),url('images/draftscreenshot.png');
+	background-size: 25%,cover;
+	background-repeat: no-repeat;
+
+	opacity:0.5;
+
+}
+
+.image6{
+	background-image: url('images/brasilpost.png');
+
+
+}
+
+.image6:hover{
+	background-image:url('images/plus.png'),url('images/brasilpost.png');
+	background-size: 25%,cover;
+	background-repeat: no-repeat;
+
+	opacity:0.5;
+
+}
 
 
 /***************************************************************** Skills*/
