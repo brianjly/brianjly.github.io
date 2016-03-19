@@ -106,19 +106,23 @@ a:hover{
 /****************************************MOBILE NAVBAR*/
 
 #mobilenav{
-	width: 35px;
+
 	position: absolute;
 	display: none;
 	z-index: 1;
 	top: 0;
 	right:0;
-	background-color: rgba(0,0,0,0.15);
+	margin-top: 7px;
+	margin-right: 7px;
 }
 
 .mobilenavitem{
-	width:100%;
-	border-radius:4px;
-	margin:1px 0;
+	border-radius:5px;
+	margin-right: 3px;
+	padding:2px;
+
+	background-color: rgba(0,0,0,0.3);
+
 
 }
 
