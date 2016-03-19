@@ -295,6 +295,10 @@ a:hover{
 	color:#00e676;
 }
 
+.largertext{
+	font-size: 1.3em;
+}
+
 .red{
 	color:#d32f2f;
 }
