@@ -295,9 +295,6 @@ a:hover{
 	color:#00e676;
 }
 
-.largertext{
-	font-size: 1.3em;
-}
 
 .red{
 	color:#d32f2f;
@@ -601,6 +598,9 @@ a:hover{
 
 @media (max-width: 600px) {
 
+	.indent{
+		margin-left: 5px;
+	}
 
 	#portfoliobox{
 		margin-top: 40px;
