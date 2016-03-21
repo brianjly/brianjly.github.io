@@ -35,7 +35,7 @@ a:hover{
 	display: inline-block;
 	opacity:0.9;
 	position:absolute;
-	box-shadow: 2px 0px 5px 1px rgba(0, 0, 0, 0.4);
+	box-shadow: 7px 0px 10px -2px rgba(0, 0, 0, 0.4);
 
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -141,9 +141,7 @@ a:hover{
   margin-top: 60px;
   margin-left: 2.5%;
   box-shadow: 0px 10px 20px -2px #444444;
-
-
-	background: linear-gradient(180deg, rgba(70, 134, 164,1) 30%, rgba(140, 108, 95, 1));
+	background: linear-gradient(180deg, rgba(70, 134, 164,1) 60%, rgba(235, 235, 235, 0.6));
 
 
 	position: relative;
@@ -159,9 +157,8 @@ a:hover{
 	background-size: contain;
 	background-image:url('images/mountain.png');
 	background-position: 0% 122%;
-	-webkit-filter:invert(95%);
+	-webkit-filter: invert(5%);
 
-	opacity: 0.6;
 
 }
 
@@ -228,7 +225,6 @@ a:hover{
 }
 
 #github:hover,#linkedin:hover{
-	-webkit-filter:blur(1.5px);
 	opacity:1;
 }
 
@@ -436,7 +432,7 @@ a:hover{
 .workbox{
 	width:30%;
 	height:400px;
-	background-color: rgba(158,158,158,0.5);
+	background-color: rgba(80,80,80,0.5);
 	margin: 10px;
 	display:block;
 	box-shadow: 0px 5px 10px 1px rgba(24, 24, 24, 0.8);
