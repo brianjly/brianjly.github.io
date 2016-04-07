@@ -456,7 +456,7 @@ a:hover{
 .workbox{
 	width:30%;
 	height:400px;
-	background-color: rgba(80,80,80,0.5);
+	background-color: rgba(0,0,0,0.5);
 	margin: 10px;
 	display:block;
 	box-shadow: 0px 2px 7px 1px rgba(24, 24, 24, 0.8);
@@ -621,9 +621,9 @@ a:hover{
 	}
 
 	#portfoliobox{
-		margin-top: 40px;
 		margin-left: 3%;
 	}
+
 
 	#particles-js::before{
 		background-position: 0% 100%;
@@ -657,11 +657,13 @@ a:hover{
 	}
 
 	.moremargin{
-		margin: 15% auto 0 10%;
+		margin: 8% auto 0 10%;
 	}
 
 	.workbox{
 		width:100%;
+		height:350px;
+
 	}
 
 }
@@ -675,6 +677,8 @@ a:hover{
 		background-position: 0% 120%;
 
 	}
+
+
 }
 
 @media only screen and (min-width: 900px) {
