@@ -172,7 +172,7 @@ a:hover{
 	position: absolute;
 	background-repeat: no-repeat;
 	background-size: contain;
-	background-image:url('images/mountain.png');
+	background-image:url('../images/mountain.png');
 	background-position: 0% 122%;
 	-webkit-filter: invert(5%);
 
@@ -497,11 +497,11 @@ a:hover{
 
 
 .image1{
-	background-image: url('images/trojanpreneur.png');
+	background-image: url('../images/trojanpreneur.png');
 }
 
 .image1:hover{
-	background-image:url('images/plus.png'),url('images/trojanpreneur.png');
+	background-image:url('../images/plus.png'),url('images/trojanpreneur.png');
 	background-size: 25%,cover;
 	background-repeat: no-repeat;
 
@@ -509,13 +509,13 @@ a:hover{
 }
 
 .image2{
-	background-image: url('images/pizza.png');
+	background-image: url('../images/pizza.png');
 
 
 }
 
 .image2:hover{
-	background-image:url('images/plus.png'),url('images/pizza.png');
+	background-image:url('../images/plus.png'),url('../images/pizza.png');
 	background-size: 25%,cover;
 	background-repeat: no-repeat;
 
@@ -524,13 +524,13 @@ a:hover{
 }
 
 .image3{
-	background-image: url('images/bender.png');
+	background-image: url('../images/bender.png');
 
 
 }
 
 .image3:hover{
-	background-image:url('images/plus.png'),url('images/bender.png');
+	background-image:url('../images/plus.png'),url('../images/bender.png');
 	background-size: 25%,cover;
 	background-repeat: no-repeat;
 
@@ -539,13 +539,13 @@ a:hover{
 }
 
 .image4{
-	background-image: url('images/guestbook.png');
+	background-image: url('../images/guestbook.png');
 
 
 }
 
 .image4:hover{
-	background-image:url('images/plus.png'),url('images/guestbook.png');
+	background-image:url('../images/plus.png'),url('../images/guestbook.png');
 	background-size: 25%,cover;
 	background-repeat: no-repeat;
 
@@ -554,13 +554,13 @@ a:hover{
 }
 
 .image5{
-	background-image: url('images/draftscreenshot.png');
+	background-image: url('../images/draftscreenshot.png');
 
 
 }
 
 .image5:hover{
-	background-image:url('images/plus.png'),url('images/draftscreenshot.png');
+	background-image:url('../images/plus.png'),url('../images/draftscreenshot.png');
 	background-size: 25%,cover;
 	background-repeat: no-repeat;
 
@@ -569,13 +569,13 @@ a:hover{
 }
 
 .image6{
-	background-image: url('images/brasilpost.png');
+	background-image: url('../images/brasilpost.png');
 
 
 }
 
 .image6:hover{
-	background-image:url('images/plus.png'),url('images/brasilpost.png');
+	background-image:url('../images/plus.png'),url('../images/brasilpost.png');
 	background-size: 25%,cover;
 	background-repeat: no-repeat;
 
