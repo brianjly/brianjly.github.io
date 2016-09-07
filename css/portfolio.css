@@ -497,11 +497,11 @@ a:hover{
 
 
 .image1{
-	background-image: url('../images/trojanpreneur.png');
+	background-image: url('../images/302.png');
 }
 
 .image1:hover{
-	background-image:url('../images/plus.png'),url('images/trojanpreneur.png');
+	background-image:url('../images/plus.png'),url('images/302.png');
 	background-size: 25%,cover;
 	background-repeat: no-repeat;
 
